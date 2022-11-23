@@ -1,0 +1,9 @@
+Package: com.retr0dev.retr0spoof
+Name: Retr0Spoof
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: retr0
+Author: retr0
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
