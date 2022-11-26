@@ -28,8 +28,8 @@ static OSStatus * replaced_SecItemCopyMatching(CFDictionaryRef query, CFTypeRef 
                 original_SecItemCopyMatching(query, result);
                 dResult = (__bridge NSData*)(*result);
                 NSString* oUUID = [[NSString alloc] initWithData:dResult encoding:NSUTF8StringEncoding];
-                if (![oUUID isEqual:@"00008101-000E41310291001E"]) {
-                        dResult = [@"00008101-000E41310291001E" dataUsingEncoding:NSUTF8StringEncoding];
+                if (![oUUID isEqual:@"UDID"]) {
+                        dResult = [@"UDID" dataUsingEncoding:NSUTF8StringEncoding];
                         if (result && *result) {
                                 CFRelease(*result);
                         }
